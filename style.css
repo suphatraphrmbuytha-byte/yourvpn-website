@@ -1,64 +1,67 @@
-body{
-    background:#0f172a;
-    color:white;
-    font-family:Arial,sans-serif;
-    margin:0;
+```css
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
 }
 
-section{
-    padding:40px 20px;
+nav {
+    background: #020617;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
 }
 
-.card{
-    background:#1e293b;
-    padding:20px;
-    border-radius:20px;
-    margin-bottom:20px;
+nav h2 {
+    margin: 0;
 }
 
-.logo-box{
-    width:250px;
-    height:250px;
-    position:relative;
-    margin:auto;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-.logo{
-    width:180px;
-    position:relative;
-    z-index:2;
+a {
+    color: #38bdf8;
+    text-decoration: none;
 }
 
-/* วงแสงสีแดง */
-.ring{
-    position:absolute;
-    width:230px;
-    height:230px;
-    border-radius:50%;
-    border:6px solid transparent;
-    border-top:6px solid red;
-    border-right:6px solid #ff4d4d;
-    box-shadow:
-    0 0 15px red,
-    0 0 30px red,
-    0 0 50px red;
-    animation:spin 1.2s linear infinite;
-    z-index:1;
+header {
+    text-align: center;
+    padding: 80px 20px;
+    background: #1e293b;
 }
 
-@keyframes spin{
-    from{
-        transform:rotate(0deg);
-    }
-
-    to{
-        transform:rotate(360deg);
-    }
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-img{
-    border-radius:15px;
+button:hover {
+    background: #1d4ed8;
 }
+
+section {
+    padding: 40px 20px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #020617;
+    text-align: center;
+    padding: 30px;
+}
+```
