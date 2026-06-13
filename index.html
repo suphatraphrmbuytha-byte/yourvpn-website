@@ -22,6 +22,8 @@
         <h1>YourVPN</h1>
         <p>VPN ความเร็วสูง ปลอดภัย และใช้งานง่าย</p>
 
+        <h2>เครดิตคงเหลือ: <span id="credit">0</span> บาท</h2>
+
         <button onclick="scrollToPricing()">
             เริ่มต้นใช้งาน
         </button>
@@ -64,19 +66,33 @@
         <h2>เติมเครดิต</h2>
 
         <div class="card">
+
+            <h3>เครดิตปัจจุบัน: <span id="credit2">0</span> บาท</h3>
+
             <h3>ข้อมูลการโอนเงิน</h3>
 
             <p><strong>ธนาคาร:</strong> กสิกรไทย</p>
             <p><strong>ชื่อบัญชี:</strong> วิทยานนท์ โขนภูเขียว</p>
             <p><strong>เลขบัญชี:</strong> 215-8-64905-8</p>
 
-            <h3>อัปโหลดสลิป</h3>
+            <h3>จำนวนเงินที่โอน</h3>
 
-            <input type="file" accept="image/*">
+            <input type="number" id="amount" placeholder="เช่น 100">
 
             <br><br>
 
-            <button>ส่งสลิป</button>
+            <h3>อัปโหลดสลิป</h3>
+
+            <input type="file" accept="image/*" onchange="previewSlip(event)">
+
+            <br><br>
+
+            <img id="preview" width="300">
+
+            <br><br>
+
+            <button onclick="submitSlip()">ส่งสลิป</button>
+
         </div>
     </section>
 
