@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="th">
 <head>
     <meta charset="UTF-8">
@@ -8,95 +9,134 @@
 </head>
 <body>
 
-    <nav>
-        <h2>YourVPN</h2>
+<nav>
+    <h2>YourVPN</h2>
 
-        <ul>
-            <li><a href="#features">จุดเด่น</a></li>
-            <li><a href="#pricing">แพ็กเกจ</a></li>
-            <li><a href="#topup">เติมเครดิต</a></li>
-        </ul>
-    </nav>
+```
+<ul>
+    <li><a href="#features">จุดเด่น</a></li>
+    <li><a href="#pricing">แพ็กเกจ</a></li>
+    <li><a href="#topup">ชำระเงิน</a></li>
+</ul>
+```
 
-    <header>
-        <h1>YourVPN</h1>
-        <p>VPN ความเร็วสูง ปลอดภัย และใช้งานง่าย</p>
+</nav>
 
-        <h2>เครดิตคงเหลือ: <span id="credit">0</span> บาท</h2>
+<header>
+    <h1>YourVPN</h1>
+    <p>VPN ความเร็วสูง ปลอดภัย และใช้งานง่าย</p>
 
-        <button onclick="scrollToPricing()">
-            เริ่มต้นใช้งาน
-        </button>
-    </header>
+```
+<button onclick="scrollToPricing()">
+    เริ่มต้นใช้งาน
+</button>
+```
 
-    <section id="features">
-        <h2>จุดเด่นของเรา</h2>
+</header>
 
-        <div class="card">
-            <h3>🔒 ความปลอดภัยสูง</h3>
-            <p>ปกป้องข้อมูลของคุณด้วยการเข้ารหัส</p>
-        </div>
+<section id="features">
 
-        <div class="card">
-            <h3>⚡ ความเร็วสูง</h3>
-            <p>เชื่อมต่อรวดเร็วและเสถียร</p>
-        </div>
+```
+<h2>จุดเด่นของเรา</h2>
 
-        <div class="card">
-            <h3>🌍 เซิร์ฟเวอร์หลายประเทศ</h3>
-            <p>เลือกตำแหน่งเซิร์ฟเวอร์ได้ทั่วโลก</p>
-        </div>
-    </section>
+<div class="card">
+    <h3>🔒 ความปลอดภัยสูง</h3>
+    <p>ปกป้องข้อมูลของคุณด้วยการเข้ารหัส</p>
+</div>
 
-    <section id="pricing">
-        <h2>แพ็กเกจ</h2>
+<div class="card">
+    <h3>⚡ ความเร็วสูง</h3>
+    <p>เชื่อมต่อรวดเร็วและเสถียร</p>
+</div>
 
-        <div class="card">
-            <h3>Basic</h3>
-            <p>99 บาท / เดือน</p>
-        </div>
+<div class="card">
+    <h3>🌍 เซิร์ฟเวอร์หลายประเทศ</h3>
+    <p>เลือกตำแหน่งเซิร์ฟเวอร์ได้ทั่วโลก</p>
+</div>
+```
 
-        <div class="card">
-            <h3>Premium</h3>
-            <p>199 บาท / เดือน</p>
-        </div>
-    </section>
+</section>
 
-    <section id="topup">
-        <h2>เติมเครดิต</h2>
+<section id="pricing">
 
-        <div class="card">
+```
+<h2>แพ็กเกจ VPN</h2>
 
-            <h3>เครดิตปัจจุบัน: <span id="credit2">0</span> บาท</h3>
+<div class="card">
+    <h3>Basic</h3>
+    <p>30 วัน</p>
+    <p>99 บาท</p>
 
-            <h3>ข้อมูลการโอนเงิน</h3>
+    <button onclick="location.href='#topup'">
+        ซื้อเลย
+    </button>
+</div>
 
-            <p><strong>ธนาคาร:</strong> กสิกรไทย</p>
-            <p><strong>ชื่อบัญชี:</strong> วิทยานนท์ โขนภูเขียว</p>
-            <p><strong>เลขบัญชี:</strong> 215-8-64905-8</p>
+<div class="card">
+    <h3>Premium</h3>
+    <p>90 วัน</p>
+    <p>199 บาท</p>
 
-            <h3>จำนวนเงินที่โอน</h3>
+    <button onclick="location.href='#topup'">
+        ซื้อเลย
+    </button>
+</div>
 
-            <input type="number" id="amount" placeholder="เช่น 100">
+<div class="card">
+    <h3>Family</h3>
+    <p>180 วัน</p>
+    <p>299 บาท</p>
 
-            <br><br>
+    <button onclick="location.href='#topup'">
+        ซื้อเลย
+    </button>
+</div>
+```
 
-            <h3>อัปโหลดสลิป</h3>
+</section>
 
-            <input type="file" accept="image/*" onchange="previewSlip(event)">
+<section id="topup">
 
-            <br><br>
+```
+<h2>ชำระเงิน</h2>
 
-            <img id="preview" width="300">
+<div class="card">
 
-            <br><br>
+    <h3>ข้อมูลการโอนเงิน</h3>
 
-            <button onclick="submitSlip()">ส่งสลิป</button>
+    <p><strong>ธนาคาร:</strong> กสิกรไทย</p>
+    <p><strong>ชื่อบัญชี:</strong> วิทยานนท์ โขนภูเขียว</p>
+    <p><strong>เลขบัญชี:</strong> 215-8-64905-8</p>
 
-        </div>
-    </section>
+    <h3>อัปโหลดสลิป</h3>
 
-    <script src="script.js"></script>
+    <input type="file" accept="image/*" onchange="previewSlip(event)">
+
+    <br><br>
+
+    <img id="preview" width="300">
+
+    <br><br>
+
+    <button>ส่งสลิป</button>
+
+</div>
+```
+
+</section>
+
+<footer>
+
+```
+<h3>ติดต่อเรา</h3>
+
+<p>Discord: YourVPN</p>
+<p>Line: @yourvpn</p>
+```
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
