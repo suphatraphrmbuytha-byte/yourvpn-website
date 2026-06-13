@@ -56,9 +56,9 @@ section {
 .card {
     background: #1e293b;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 15px;
     margin-bottom: 20px;
-    box-shadow: 0 0 20px rgba(255,0,0,0.15);
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
 
 footer {
@@ -67,49 +67,47 @@ footer {
     padding: 30px;
 }
 
-/* วงแสงรอบโลโก้ */
+/* โลโก้ */
 
-.logo-container{
+.logo-box{
     position: relative;
-    width: 220px;
-    height: 220px;
+    width: 250px;
+    height: 250px;
     margin: auto;
-}
-
-.logo-container::before{
-    content: "";
-    position: absolute;
-    inset: -10px;
-    border-radius: 50%;
-
-    background: conic-gradient(
-        transparent,
-        red,
-        #ff3b3b,
-        red,
-        transparent
-    );
-
-    animation: rotateRing 2s linear infinite;
-
-    filter: blur(10px);
 }
 
 .logo{
-    position: relative;
-    z-index: 2;
     width: 220px;
-    display: block;
-    margin: auto;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
 }
 
-@keyframes rotateRing {
+/* วงแสงสีแดงหมุนรอบโลโก้ */
 
-    from{
+.ring{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    border-top: 5px solid red;
+    border-right: 5px solid #ff3b3b;
+    animation: spin 2s linear infinite;
+    box-shadow:
+        0 0 20px red,
+        0 0 40px red,
+        0 0 60px red;
+}
+
+@keyframes spin {
+
+    0%{
         transform: rotate(0deg);
     }
 
-    to{
+    100%{
         transform: rotate(360deg);
     }
 
