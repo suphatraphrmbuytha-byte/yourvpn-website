@@ -8,43 +8,58 @@
 </head>
 <body>
 
-<header>
-    <h1>YourVPN</h1>
-    <p>VPN ความเร็วสูง ปลอดภัย และใช้งานง่าย</p>
-</header>
+    <nav>
+        <h2>YourVPN</h2>
 
-<section>
-    <h2>จุดเด่นของเรา</h2>
+        <ul>
+            <li><a href="#features">จุดเด่น</a></li>
+            <li><a href="#pricing">แพ็กเกจ</a></li>
+        </ul>
+    </nav>
 
-    <div class="card">
-        <h3>🔒 ความปลอดภัยสูง</h3>
-        <p>ปกป้องข้อมูลของคุณด้วยการเข้ารหัส</p>
-    </div>
+    <header>
+        <h1>YourVPN</h1>
+        <p>VPN ความเร็วสูง ปลอดภัย และใช้งานง่าย</p>
 
-    <div class="card">
-        <h3>⚡ ความเร็วสูง</h3>
-        <p>เชื่อมต่อรวดเร็วและเสถียร</p>
-    </div>
+        <button onclick="scrollToPricing()">
+            เริ่มต้นใช้งาน
+        </button>
+    </header>
 
-    <div class="card">
-        <h3>🌍 เซิร์ฟเวอร์หลายประเทศ</h3>
-        <p>เลือกตำแหน่งเซิร์ฟเวอร์ได้ทั่วโลก</p>
-    </div>
-</section>
+    <section id="features">
+        <h2>จุดเด่นของเรา</h2>
 
-<section>
-    <h2>แพ็กเกจ</h2>
+        <div class="card">
+            <h3>🔒 ความปลอดภัยสูง</h3>
+            <p>ปกป้องข้อมูลของคุณด้วยการเข้ารหัส</p>
+        </div>
 
-    <div class="card">
-        <h3>Basic</h3>
-        <p>99 บาท / เดือน</p>
-    </div>
+        <div class="card">
+            <h3>⚡ ความเร็วสูง</h3>
+            <p>เชื่อมต่อรวดเร็วและเสถียร</p>
+        </div>
 
-    <div class="card">
-        <h3>Premium</h3>
-        <p>199 บาท / เดือน</p>
-    </div>
-</section>
+        <div class="card">
+            <h3>🌍 เซิร์ฟเวอร์หลายประเทศ</h3>
+            <p>เลือกตำแหน่งเซิร์ฟเวอร์ได้ทั่วโลก</p>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <h2>แพ็กเกจ</h2>
+
+        <div class="card">
+            <h3>Basic</h3>
+            <p>99 บาท / เดือน</p>
+        </div>
+
+        <div class="card">
+            <h3>Premium</h3>
+            <p>199 บาท / เดือน</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
