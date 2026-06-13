@@ -13,25 +13,29 @@ nav {
     padding: 15px 30px;
 }
 
+nav h2 {
+    margin: 0;
+}
+
 ul {
+    list-style: none;
     display: flex;
     gap: 20px;
-    list-style: none;
 }
 
 a {
-    color: white;
+    color: #38bdf8;
     text-decoration: none;
 }
 
 header {
     text-align: center;
-    padding: 60px 20px;
+    padding: 80px 20px;
     background: #1e293b;
 }
 
 button {
-    background: #3b82f6;
+    background: #2563eb;
     color: white;
     border: none;
     padding: 12px 20px;
@@ -39,8 +43,12 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    background: #1d4ed8;
+}
+
 section {
-    padding: 30px;
+    padding: 40px 20px;
 }
 
 .card {
@@ -50,9 +58,8 @@ section {
     margin-bottom: 20px;
 }
 
-#preview {
-    max-width: 300px;
-    margin-top: 20px;
-    display: none;
-    border-radius: 10px;
+footer {
+    background: #020617;
+    text-align: center;
+    padding: 30px;
 }
